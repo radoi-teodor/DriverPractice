@@ -91,6 +91,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="driver.cpp" />
+    <ClCompile Include="LsaUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LsaUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

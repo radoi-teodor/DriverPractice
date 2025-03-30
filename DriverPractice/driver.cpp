@@ -1,4 +1,6 @@
+#include <ntifs.h>
 #include <ntddk.h>
+#include "LsaUtils.h"
 
 #define DRIVER_NAME "DriverPractice"
 
@@ -13,6 +15,8 @@ extern "C" {
 		DriverObject->DriverUnload = UnloadDriver;
 
 		DbgPrintEx(0, 0, "[%s] Driver Loaded", DRIVER_NAME);
+
+		LsaUtils::ToggleLsa(688, 2);
 
 		return STATUS_SUCCESS;
 
